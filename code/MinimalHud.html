@@ -1,0 +1,22 @@
+
+<link rel="stylesheet" href="minimalhud.scss">
+
+<div>
+
+	<text class="title">M</text>
+
+	<div class="form-row">
+		<div class="form-label">
+			<text>Slider With Entry</text>
+		</div>
+		<div class="form-value">
+			<SliderEntry min="0" max="100" @value="FloatValu"></SliderEntry>
+		</div>
+	</div>
+
+	<!-- A crosshair in just css -->
+	<div style="position: absolute; left: 50%; top: 50%; background-color: white; border-radius: 10px; width: 4px; height: 4px; transform: translate( -50% -50% );"></div>
+
+	<chatbox></chatbox>
+
+</div> 

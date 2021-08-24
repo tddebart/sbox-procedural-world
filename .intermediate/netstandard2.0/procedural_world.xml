@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>procedural_world</name>
+    </assembly>
+    <members>
+        <member name="T:MinimalExample.Game">
+            <summary>
+            This is your game class. This is an entity that is created serverside when
+            the game starts, and is replicated to the client. 
+            
+            You can use this to create things like HUDs and declare which player class
+            to use for spawned players.
+            </summary>
+        </member>
+        <member name="M:MinimalExample.Game.ClientJoined(Sandbox.Client)">
+            <summary>
+            A client has joined the server. Make them a pawn to play with
+            </summary>
+        </member>
+        <member name="T:MinimalExample.MinimalHudEntity">
+            <summary>
+            This is the HUD entity. It creates a RootPanel clientside, which can be accessed
+            via RootPanel on this entity, or Local.Hud.
+            </summary>
+        </member>
+        <member name="M:MinimalExample.MinimalPlayer.Simulate(Sandbox.Client)">
+            <summary>
+            Called every tick, clientside and serverside.
+            </summary>
+        </member>
+        <member name="P:Instagib.UI.Elements.Slider.Value">
+            <summary>
+            The current slider value from 0 to 1.
+            </summary>
+        </member>
+        <member name="P:Instagib.UI.Elements.Slider.CalcValue">
+            <summary>
+            The user-facing value as calculated by <see cref="P:Instagib.UI.Elements.Slider.ValueCalcFunc"/> 
+            </summary>
+        </member>
+        <member name="P:Instagib.UI.Elements.Slider.ValueCalcFunc">
+            <summary>
+            This is where the value gets calculated. This is also shown to the user.
+            </summary>
+        </member>
+        <member name="F:Instagib.UI.Elements.Slider.OnValueChange">
+            <summary>
+            Fired when the slider value changes.
+            <para>
+            The newValue parameter represents the same value as <see cref="P:Instagib.UI.Elements.Slider.CalcValue"/>.
+            </para>
+            </summary>
+        </member>
+    </members>
+</doc>
