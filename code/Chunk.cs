@@ -14,7 +14,7 @@ namespace procedural_world
 		private float[,] noiseMap;
 		private MeshData meshData;
 		
-		public void Re
+		
 
 		public void GenerateMapSingle()
 		{
